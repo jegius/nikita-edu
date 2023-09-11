@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow:wght@400;700&family=Inter:wght@400;500;700&family=Manrope:wght@700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&display=swap");
+
+:root {
+  /* Colors */
+  --black: #000;
+
+  /* Images */
+  --logo: url(/image/header/logo.png);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  background-color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.header__logo {
+  width: 10.1875rem;
+  height: 2.375rem;
+  background: var(--logo) no-repeat 100%;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.header__login {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: .75rem 1.5rem;
+  border: 2px solid var(--black);
+  border-radius: 5px;
+}
