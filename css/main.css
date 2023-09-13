@@ -3,9 +3,12 @@
 :root {
   /* Colors */
   --black: #000;
+  --orange: #fc621c;
 
   /* Images */
   --logo: url(/image/header/logo.png);
+  --bia-top-right: url(/image/best-in-auto/top-right.png);
+  --bia-bot-left: url(/image/best-in-auto/bot-left.png);
 }
 
 body {
@@ -39,20 +42,27 @@ a {
   text-decoration-line: none;
 }
 
-.header {
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+.navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 3rem;
 }
 
-.header__logo {
+.navigation__logo {
   width: 10.1875rem;
   height: 2.375rem;
   background: var(--logo) no-repeat 100%;
 }
 
-.header__list {
+.navigation__list {
   display: flex;
   justify-content: space-around;
   gap: 3rem;
@@ -61,12 +71,45 @@ a {
   font-size: 18px;
 }
 
-.header__login {
+.navigation__login {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-transform: capitalize;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border: 2px solid var(--black);
   border-radius: 5px;
+}
+
+/* Best In Auto */
+
+.best-in-auto {
+  padding: 2rem 5rem 0;
+  margin-top: 5.5rem;
+  background: var(--bia-top-right) top right no-repeat,
+    var(--bia-bot-left) bottom left no-repeat;
+  background-size: 40%;
+}
+
+.best-in-auto__white {
+  height: 36.25rem;
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+}
+
+.best-in-auto__rental {
+  padding-left: 12rem;
+}
+
+.best-in-auto__text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  width: 43rem;
+  padding: 14rem 0 0 45%;
+}
+
+.best-in-auto__orange {
+  height: 11.5rem;
 }
