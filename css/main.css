@@ -4,6 +4,7 @@
   /* Colors */
   --black: #000;
   --orange: #fc621c;
+  --transwhite: rgba(255, 255, 255, 0.14);
 
   /* Images */
   --logo: url(/image/header/logo.png);
@@ -47,6 +48,13 @@ h1 {
   padding: 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
 /* Header */
 
 .navigation {
@@ -84,22 +92,47 @@ h1 {
 /* Best In Auto */
 
 .best-in-auto {
-  padding: 2rem 5rem 0;
-  margin-top: 5.5rem;
-  background: var(--bia-top-right) top right no-repeat,
-    var(--bia-bot-left) bottom left no-repeat;
-  background-size: 40%;
-}
-
-.best-in-auto__white {
-  height: 36.25rem;
+  display: flex;
+  flex-direction: column;
   font-family: "Abril Fatface", sans-serif;
   font-weight: 400;
   font-size: 70px;
 }
 
+.best-in-auto__white {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  gap: 2rem;
+}
+
+.best-in-auto__first-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.best-in-auto__title {
+  display: flex;
+  flex-direction: column;
+  min-width: 56.25rem;
+  margin-top: 1.5rem;
+}
+
 .best-in-auto__rental {
-  padding-left: 12rem;
+  align-self: flex-end;
+}
+
+.best-in-auto__top-right-pict {
+  width: 575px;
+  height: 405px;
+  background: var(--bia-top-right) no-repeat;
+}
+
+.best-in-auto__second-row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
 }
 
 .best-in-auto__text {
@@ -107,9 +140,24 @@ h1 {
   font-weight: 400;
   font-size: 24px;
   width: 43rem;
-  padding: 14rem 0 0 45%;
 }
 
 .best-in-auto__orange {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: var(--orange);
   height: 11.5rem;
+  gap: 15rem;
+}
+
+.best-in-auto__bot-left-pict {
+  width: 640px;
+  height: 405px;
+  background: var(--bia-bot-left) no-repeat;
+  margin: 0 0 4rem 5rem;
+}
+
+.best-in-auto__why-choose {
+  color: var(--transwhite);
 }
