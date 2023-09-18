@@ -3,11 +3,14 @@
 :root {
   /* Colors */
   --black: #000;
+  --white: #fff;
   --orange: #fc621c;
   --transwhite: rgba(255, 255, 255, 0.14);
+  --notification-color: #dd4141;
 
   /* Images */
   --logo: url(/image/header/logo.png);
+  --nav-notification: url(/image/header/notification.png);
   --bia-top-right: url(/image/best-in-auto/top-right.png);
   --bia-bot-left: url(/image/best-in-auto/bot-left.png);
 }
@@ -79,9 +82,53 @@ h1 {
   font-size: 18px;
 }
 
-.navigation__login {
+.navigation__buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
+}
+
+.navigation__notification {
+  display: flex;
+  justify-content: flex-end;
+  width: 2rem;
+  height: 2.3rem;
+  background: var(--nav-notification) no-repeat;
+  background-position: bottom left;
+}
+
+.navigation__notification:hover .navigation__notification-indicator {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.navigation__notification:hover .navigation__notification-count {
+  font-size: 24px;
+}
+
+.navigation__notification-indicator {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: var(--notification-color);
+  border-radius: 50%;
+  border: 0.1rem solid var(--white);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.navigation__notification-count {
+  font-size: 12px;
+  color: var(--white);
+  transition: font-size 0.3s ease;
+}
+
+.navigation__login {
   font-size: 20px;
   text-transform: capitalize;
   padding: 0.75rem 1.5rem;
@@ -124,8 +171,8 @@ h1 {
 }
 
 .best-in-auto__top-right-pict {
-  width: 575px;
-  height: 405px;
+  width: 35.9375rem;
+  height: 25.3125rem;
   background: var(--bia-top-right) no-repeat;
 }
 
@@ -152,8 +199,8 @@ h1 {
 }
 
 .best-in-auto__bot-left-pict {
-  width: 640px;
-  height: 405px;
+  width: 40rem;
+  height: 25.3125rem;
   background: var(--bia-bot-left) no-repeat;
   margin: 0 0 4rem 5rem;
 }
