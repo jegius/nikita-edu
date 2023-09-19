@@ -13,6 +13,9 @@
   --nav-notification: url(/image/header/notification.png);
   --bia-top-right: url(/image/best-in-auto/top-right.png);
   --bia-bot-left: url(/image/best-in-auto/bot-left.png);
+  --car-left: url(/image/why-choose-us/car-left.png);
+  --car-center: url(/image/why-choose-us/car-center.png);
+  --car-right: url(/image/why-choose-us/car-right.png);
 }
 
 body {
@@ -51,11 +54,26 @@ h1 {
   padding: 0;
 }
 
+/* Mixins */
+
+._main-header {
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+}
+
+._main-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Main */
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6rem;
 }
 
 /* Header */
@@ -64,7 +82,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 3rem;
+  margin: 3rem 0 6rem 0;
 }
 
 .navigation__logo {
@@ -136,7 +154,7 @@ h1 {
   border-radius: 5px;
 }
 
-/* Best In Auto */
+/*Section "Best In Auto" */
 
 .best-in-auto {
   display: flex;
@@ -207,4 +225,49 @@ h1 {
 
 .best-in-auto__why-choose {
   color: var(--transwhite);
+}
+
+/* Section "Why Choose Us?" */
+
+.why-choose-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.why-choose-us__text {
+  max-width: 31.5625rem;
+  line-height: 1.5625rem;
+  text-align: center;
+}
+
+.why-choose-us__auto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.why-choose-us__auto-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 28.75rem;
+}
+
+.why-choose-us__auto-pict-left {
+  background: var(--car-left) no-repeat;
+  height: 21.25rem;
+}
+
+.why-choose-us__auto-pict-center {
+  background: var(--car-center) no-repeat;
+  height: 21.25rem;
+}
+
+.why-choose-us__auto-pict-right {
+  background: var(--car-right) no-repeat;
+  height: 21.25rem;
 }
