@@ -19,6 +19,7 @@
   --car-center: url(/image/why-choose-us/car-center.png);
   --car-right: url(/image/why-choose-us/car-right.png);
   --rent-a-car: url(/image/rent-a-car/rent-a-car.png);
+  --select-arrow: url(/image/rent-a-car/select-arrow.svg);
 }
 
 body {
@@ -256,6 +257,7 @@ h1 {
 /* Section "Why Choose Us?" */
 
 .why-choose-us {
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,6 +368,13 @@ h1 {
   color: var(--black);
 }
 
+._select {
+  width: 23.1rem;
+  background-image: var(--select-arrow);
+  background-repeat: no-repeat;
+  background-position: calc(20%) center;
+}
+
 .rent-a-car__button {
   background-color: var(--orange);
   color: var(--white);
@@ -374,4 +383,10 @@ h1 {
   font-size: 20px;
   font-weight: 700;
   border-radius: 0.3125rem;
+  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.rent-a-car__button:hover {
+  transform: scale(0.95);
+  box-shadow: var(--black) 0 0 0.2125rem 0.1075rem;
 }
