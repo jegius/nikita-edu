@@ -20,6 +20,10 @@
   --car-right: url(/image/why-choose-us/car-right.png);
   --rent-a-car: url(/image/rent-a-car/rent-a-car.png);
   --select-arrow: url(/image/rent-a-car/select-arrow.svg);
+  --comfortable-car-white-left: url(/image/comfortable-car-white/comfortable-car-white-left.png);
+  --comfortable-car-white-top-right-1: url(/image/comfortable-car-white/comfortable-car-white-top-right-1.png);
+  --comfortable-car-white-top-right-2: url(/image/comfortable-car-white/comfortable-car-white-top-right-2.png);
+  --comfortable-car-white-bot-right: url(/image/comfortable-car-white/comfortable-car-white-bot-right.png);
 }
 
 body {
@@ -153,8 +157,8 @@ h1 {
   align-self: flex-start;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   background-color: var(--notification-color);
   border-radius: 50%;
   border: 0.1rem solid var(--white);
@@ -171,8 +175,8 @@ h1 {
   font-size: 20px;
   text-transform: capitalize;
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--black);
-  border-radius: 5px;
+  border: 0.125rem solid var(--black);
+  border-radius: 0.3125rem;
   transition: box-shadow 0.1s ease, text-shadow 0.1s ease;
 }
 
@@ -389,4 +393,66 @@ h1 {
 .rent-a-car__button:hover {
   transform: scale(0.95);
   box-shadow: var(--black) 0 0 0.2125rem 0.1075rem;
+}
+
+/* Section "Comfortable Car White" */
+
+.comfortable-car-white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comfortable-car-white__text {
+  width: 35.125rem;
+  text-align: center;
+}
+
+.comfortable-car-white__cars-info {
+  display: flex;
+  gap: 3rem;
+}
+
+.comfortable-car-white__car-left {
+  background: var(--comfortable-car-white-left) no-repeat;
+  min-width: 23.125rem;
+  min-height: 29.6875rem;
+  align-self: flex-end;
+}
+
+.comfortable-car-white__cars-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 17.625rem;
+  line-height: 1.5625rem;
+  align-self: flex-end;
+}
+
+.comfortable-car-white__cars-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.comfortable-car-white__cars-top-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.comfortable-car-white__car-top-right-1 {
+  background: var(--comfortable-car-white-top-right-1) no-repeat;
+  min-width: 15.625rem;
+  min-height: 20.125rem;
+}
+
+.comfortable-car-white__car-top-right-2 {
+  background: var(--comfortable-car-white-top-right-2) no-repeat;
+  min-width: 15.625rem;
+  min-height: 20.125rem;
+}
+
+.comfortable-car-white__car-bot-right {
+  background: var(--comfortable-car-white-bot-right) no-repeat;
+  min-width: 34.375rem;
+  min-height: 10.625rem;
 }
