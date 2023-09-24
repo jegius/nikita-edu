@@ -163,6 +163,7 @@ h1 {
   border-radius: 50%;
   border: 0.1rem solid var(--white);
   transition: width 0.3s ease, height 0.3s ease;
+  cursor: pointer;
 }
 
 .navigation__notification-count {
@@ -178,6 +179,7 @@ h1 {
   border: 0.125rem solid var(--black);
   border-radius: 0.3125rem;
   transition: box-shadow 0.1s ease, text-shadow 0.1s ease;
+  cursor: pointer;
 }
 
 .navigation__login:hover {
@@ -318,16 +320,19 @@ h1 {
 .why-choose-us__auto-pict-left {
   background: var(--car-left) no-repeat;
   height: 21.25rem;
+  cursor: pointer;
 }
 
 .why-choose-us__auto-pict-center {
   background: var(--car-center) no-repeat;
   height: 21.25rem;
+  cursor: pointer;
 }
 
 .why-choose-us__auto-pict-right {
   background: var(--car-right) no-repeat;
   height: 21.25rem;
+  cursor: pointer;
 }
 
 .why-choose-us__auto-stick {
@@ -377,6 +382,7 @@ h1 {
   background-image: var(--select-arrow);
   background-repeat: no-repeat;
   background-position: calc(20%) center;
+  cursor: pointer;
 }
 
 .rent-a-car__button {
@@ -388,6 +394,7 @@ h1 {
   font-weight: 700;
   border-radius: 0.3125rem;
   transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+  cursor: pointer;
 }
 
 .rent-a-car__button:hover {
