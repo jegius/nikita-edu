@@ -24,6 +24,9 @@
   --comfortable-car-white-top-right-1: url(/image/comfortable-car-white/comfortable-car-white-top-right-1.png);
   --comfortable-car-white-top-right-2: url(/image/comfortable-car-white/comfortable-car-white-top-right-2.png);
   --comfortable-car-white-bot-right: url(/image/comfortable-car-white/comfortable-car-white-bot-right.png);
+  --comfortable-car-orange-big: url(/image/comfortable-car-orange/comfortable-car-orange-big.png);
+  --comfortable-car-orange-little-left: url(/image/comfortable-car-orange/comfortable-car-orange-little-left.png);
+  --comfortable-car-orange-little-right: url(/image/comfortable-car-orange/comfortable-car-orange-little-right.png);
 }
 
 body {
@@ -91,6 +94,10 @@ h1 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+._transwhite {
+  color: var(--transwhite);
 }
 
 /* Main */
@@ -254,10 +261,6 @@ h1 {
   height: 25.3125rem;
   background: var(--bia-bot-left) no-repeat;
   margin: 0 0 4rem 5rem;
-}
-
-.best-in-auto__why-choose {
-  color: var(--transwhite);
 }
 
 /* Section "Why Choose Us?" */
@@ -462,4 +465,45 @@ h1 {
   background: var(--comfortable-car-white-bot-right) no-repeat;
   min-width: 34.375rem;
   min-height: 10.625rem;
+}
+
+/* Section "Comfortable Car Orange" */
+
+.comfortable-car-orange {
+  background: var(--orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comfortable-car-orange__cars-info {
+  display: flex;
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-left: 15rem;
+}
+
+.comfortable-car-orange__cars-info-header {
+  max-width: 30.75rem;
+}
+
+.comfortable-car-orange__cars-info-back-and-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 48.125rem;
+}
+
+.comfortable-car-orange__cars-info-background {
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+  align-self: flex-end;
+}
+
+.comfortable-car-orange__cars-info-text {
+  max-width: 35.9375rem;
+  align-self: flex-start;
+  line-height: 1.5625rem;
 }
