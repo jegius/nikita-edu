@@ -27,6 +27,9 @@
   --comfortable-car-orange-big: url(/image/comfortable-car-orange/comfortable-car-orange-big.png);
   --comfortable-car-orange-little-left: url(/image/comfortable-car-orange/comfortable-car-orange-little-left.png);
   --comfortable-car-orange-little-right: url(/image/comfortable-car-orange/comfortable-car-orange-little-right.png);
+  --man-left: url(/image/our-faithful-staff/man-left.png);
+  --man-center: url(/image/our-faithful-staff/man-center.png);
+  --man-right: url(/image/our-faithful-staff/man-right.png);
 }
 
 body {
@@ -416,6 +419,7 @@ h1 {
 .comfortable-car-white__text {
   width: 35.125rem;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 .comfortable-car-white__cars-info {
@@ -505,7 +509,7 @@ h1 {
 .comfortable-car-orange__cars-info-text {
   max-width: 35.9375rem;
   align-self: flex-start;
-  line-height: 1.5625rem;
+  line-height: 1.5rem;
 }
 
 .comfortable-car-orange__big {
@@ -535,4 +539,24 @@ h1 {
   min-height: 12rem;
   margin-top: 3rem;
   margin-right: 24rem;
+}
+
+/* Section "Our Faithful Staff" */
+
+.our-faithful-staff {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+.our-faithful-staff__mans-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-faithful-staff__mans-text {
+  max-width: 565px;
+  text-align: center;
+  line-height: 1.5rem;
 }
