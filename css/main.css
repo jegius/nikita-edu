@@ -470,7 +470,7 @@ h1 {
 /* Section "Comfortable Car Orange" */
 
 .comfortable-car-orange {
-  background: var(--orange);
+  background: linear-gradient(var(--orange) 77%, var(--white) 23%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -506,4 +506,33 @@ h1 {
   max-width: 35.9375rem;
   align-self: flex-start;
   line-height: 1.5625rem;
+}
+
+.comfortable-car-orange__big {
+  display: flex;
+  flex-direction: column;
+  background: var(--comfortable-car-orange-big) center no-repeat;
+  min-width: 70.875rem;
+  min-height: 27.25rem;
+}
+
+.comfortable-car-orange__little-cars {
+  display: flex;
+  flex-direction: column;
+}
+
+.comfortable-car-orange__little-left {
+  background: var(--comfortable-car-orange-little-left) left no-repeat;
+  min-width: 14.8125rem;
+  min-height: 11.3125rem;
+  margin-top: 5rem;
+  margin-left: 18rem;
+}
+
+.comfortable-car-orange__little-right {
+  background: var(--comfortable-car-orange-little-right) right no-repeat;
+  min-width: 15.75rem;
+  min-height: 12rem;
+  margin-top: 3rem;
+  margin-right: 24rem;
 }
