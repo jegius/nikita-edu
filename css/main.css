@@ -556,7 +556,45 @@ h1 {
 }
 
 .our-faithful-staff__mans-text {
-  max-width: 565px;
+  max-width: 35.3125rem;
   text-align: center;
   line-height: 1.5rem;
+}
+
+.our-faithful-staff__mans-contact {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-faithful-staff__mans-contact-left {
+  align-self: flex-start;
+}
+
+.our-faithful-staff__mans-contact-center {
+  align-self: center;
+}
+
+.our-faithful-staff__mans-contact-right {
+  align-self: flex-end;
+}
+
+.our-faithful-staff__man-left {
+  background: var(--man-left) no-repeat;
+  min-width: 456px;
+  min-height: 342px;
+}
+
+.our-faithful-staff__man-center {
+  background: var(--man-center) no-repeat;
+  min-width: 456px;
+  min-height: 342px;
+}
+
+.our-faithful-staff__man-right {
+  background: var(--man-right) no-repeat;
+  min-width: 456px;
+  min-height: 342px;
 }
