@@ -30,6 +30,7 @@
   --man-left: url(/image/our-faithful-staff/man-left.png);
   --man-center: url(/image/our-faithful-staff/man-center.png);
   --man-right: url(/image/our-faithful-staff/man-right.png);
+  --phone-logo: url(/image/our-faithful-staff/phone-logo.png);
 }
 
 body {
@@ -97,6 +98,18 @@ h1 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+._main-proff {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+._main-phone {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 ._transwhite {
@@ -280,7 +293,7 @@ h1 {
 
 .why-choose-us__text {
   max-width: 31.5625rem;
-  line-height: 1.5625rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -546,6 +559,7 @@ h1 {
 .our-faithful-staff {
   display: flex;
   flex-direction: column;
+
   margin-top: 8rem;
 }
 
@@ -562,11 +576,11 @@ h1 {
 }
 
 .our-faithful-staff__mans-contact {
-  height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .our-faithful-staff__mans-contact-left {
@@ -583,18 +597,22 @@ h1 {
 
 .our-faithful-staff__man-left {
   background: var(--man-left) no-repeat;
-  min-width: 456px;
-  min-height: 342px;
+  min-width: 28.5rem;
+  min-height: 21.375rem;
 }
 
 .our-faithful-staff__man-center {
   background: var(--man-center) no-repeat;
-  min-width: 456px;
-  min-height: 342px;
+  min-width: 28.5rem;
+  min-height: 21.375rem;
 }
 
 .our-faithful-staff__man-right {
   background: var(--man-right) no-repeat;
-  min-width: 456px;
-  min-height: 342px;
+  min-width: 28.5rem;
+  min-height: 21.375rem;
+}
+
+h3 {
+  background: var(--phone-logo) no-repeat;
 }
