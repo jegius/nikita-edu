@@ -9,6 +9,8 @@
   --notification-color: #dd4141;
   --rent-a-car-input-bg: #f9f9f9;
   --rent-a-car-border-bg: rgba(0, 0, 0, 0.05);
+  --review-block-color: #f8f8f8;
+  --review-block-text: #636262;
 
   /* Images */
   --logo: url(/image/header/logo.png);
@@ -31,6 +33,7 @@
   --man-center: url(/image/our-faithful-staff/man-center.png);
   --man-right: url(/image/our-faithful-staff/man-right.png);
   --phone-logo: url(/image/our-faithful-staff/phone-logo.png);
+  --review-star: url(/image/review/review-star.png);
 }
 
 body {
@@ -619,6 +622,10 @@ h1 {
   flex-direction: column;
 }
 
+.review__header {
+  padding-left: 18.5rem;
+}
+
 .review__header-top {
   font-size: 53px;
 }
@@ -638,4 +645,44 @@ h1 {
 .review__header-text {
   width: 28.125rem;
   line-height: 1.3rem;
+}
+
+.review__block-list {
+  display: flex;
+  gap: 3rem;
+}
+
+.review__block {
+  display: flex;
+  flex-direction: column;
+  width: 25.9375rem;
+  height: 16.625rem;
+  border-radius: 1.875rem;
+  background-color: var(--review-block-color);
+  color: var(--review-block-text);
+  padding: 2.5rem 8.125rem 1.5rem 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.75rem;
+}
+
+.block_orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.review__block-text {
+  height: 8.75rem;
+}
+
+.review__star-list {
+  display: flex;
+  gap: .5rem;
+}
+
+.review__star {
+  width: 2rem;
+  height: 2rem;
+  background: var(--review-star) no-repeat center;
 }
