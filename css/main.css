@@ -100,20 +100,20 @@ h1 {
   font-size: 14px;
 }
 
-._main-proff {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-}
-
-._main-phone {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-}
-
 ._transwhite {
   color: var(--transwhite);
+}
+
+._block-top {
+  align-self: flex-start;
+}
+
+._block-center {
+  align-self: center;
+}
+
+._block-bottom {
+  align-self: flex-end;
 }
 
 /* Main */
@@ -184,30 +184,30 @@ h1 {
   height: 1.25rem;
   background-color: var(--notification-color);
   border-radius: 50%;
-  border: 0.1rem solid var(--white);
-  transition: width 0.3s ease, height 0.3s ease;
+  border: .1rem solid var(--white);
+  transition: width .3s ease, height .3s ease;
   cursor: pointer;
 }
 
 .navigation__notification-count {
   font-size: 12px;
   color: var(--white);
-  transition: font-size 0.3s ease;
+  transition: font-size .3s ease;
 }
 
 .navigation__login {
   font-size: 20px;
   text-transform: capitalize;
-  padding: 0.75rem 1.5rem;
-  border: 0.125rem solid var(--black);
-  border-radius: 0.3125rem;
-  transition: box-shadow 0.1s ease, text-shadow 0.1s ease;
+  padding: .75rem 1.5rem;
+  border: .125rem solid var(--black);
+  border-radius: .3125rem;
+  transition: box-shadow .1s ease, text-shadow .1s ease;
   cursor: pointer;
 }
 
 .navigation__login:hover {
   box-shadow: 0 0 0.1rem 0.1rem var(--black);
-  text-shadow: 0.0625rem 0 1.5rem var(--orange);
+  text-shadow: .0625rem 0 1.5rem var(--orange);
 }
 
 /*Section "Best In Auto" */
@@ -310,26 +310,14 @@ h1 {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: .5rem;
 }
 
 .why-choose-us__auto-block {
   display: flex;
   flex-direction: column;
   max-width: 28.75rem;
-  transition: transform 0.2s ease-in;
-}
-
-.why-choose-us_block-top {
-  align-self: flex-start;
-}
-
-.why-choose-us_block-center {
-  align-self: center;
-}
-
-.why-choose-us_block-bottom {
-  align-self: flex-end;
+  transition: transform .2s ease-in;
 }
 
 .why-choose-us__auto-block:hover {
@@ -356,7 +344,7 @@ h1 {
 
 .why-choose-us__auto-stick {
   width: 6.875rem;
-  height: 0.0625rem;
+  height: .0625rem;
   background-color: var(--white);
   margin-top: 1rem;
 }
@@ -388,8 +376,8 @@ h1 {
   width: 20rem;
   padding: 1.5rem;
   background-color: var(--rent-a-car-input-bg);
-  border: 0.0625rem solid var(--rent-a-car-border-bg);
-  border-radius: 0.3125rem;
+  border: .0625rem solid var(--rent-a-car-border-bg);
+  border-radius: .3125rem;
 }
 
 .rent-a-car__input::-webkit-input-placeholder {
@@ -411,14 +399,14 @@ h1 {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  border-radius: 0.3125rem;
-  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+  border-radius: .3125rem;
+  transition: transform .2s ease-in, box-shadow .2s ease-in;
   cursor: pointer;
 }
 
 .rent-a-car__button:hover {
   transform: scale(0.95);
-  box-shadow: var(--black) 0 0 0.2125rem 0.1075rem;
+  box-shadow: var(--black) 0 0 .2125rem .1075rem;
 }
 
 /* Section "Comfortable Car White" */
@@ -528,30 +516,27 @@ h1 {
 .comfortable-car-orange__big {
   display: flex;
   flex-direction: column;
+  align-self: center;
   background: var(--comfortable-car-orange-big) center no-repeat;
-  min-width: 70.875rem;
-  min-height: 27.25rem;
-}
-
-.comfortable-car-orange__little-cars {
-  display: flex;
-  flex-direction: column;
+  min-width: 80.875rem;
+  min-height: 28.25rem;
 }
 
 .comfortable-car-orange__little-left {
+  position: relative;
+  top: 4rem;
   background: var(--comfortable-car-orange-little-left) left no-repeat;
   min-width: 14.8125rem;
   min-height: 11.3125rem;
-  margin-top: 5rem;
-  margin-left: 18rem;
 }
 
 .comfortable-car-orange__little-right {
-  background: var(--comfortable-car-orange-little-right) right no-repeat;
+  position: relative;
+  top: 7rem;
+  right: 5rem;
+  background: var(--comfortable-car-orange-little-right) bottom right no-repeat;
   min-width: 15.75rem;
   min-height: 12rem;
-  margin-top: 3rem;
-  margin-right: 24rem;
 }
 
 /* Section "Our Faithful Staff" */
@@ -559,8 +544,7 @@ h1 {
 .our-faithful-staff {
   display: flex;
   flex-direction: column;
-
-  margin-top: 8rem;
+  margin-top: 9rem;
 }
 
 .our-faithful-staff__mans-info {
@@ -575,44 +559,83 @@ h1 {
   line-height: 1.5rem;
 }
 
+.our-faithful-staff__mans-blocks {
+  display: flex;
+  height: 41.875rem;
+  justify-content: center;
+  gap: 2.8125rem;
+  margin-top: 3rem;
+}
+
 .our-faithful-staff__mans-contact {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: .5rem;
 }
 
-.our-faithful-staff__mans-contact-left {
-  align-self: flex-start;
+.our-faithful-staff__main-proff {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
 }
 
-.our-faithful-staff__mans-contact-center {
-  align-self: center;
+.our-faithful-staff__main-phone {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.our-faithful-staff__mans-contact-right {
-  align-self: flex-end;
-}
-
-.our-faithful-staff__man-left {
+.our-faithful-staff_man-left {
   background: var(--man-left) no-repeat;
   min-width: 28.5rem;
   min-height: 21.375rem;
 }
 
-.our-faithful-staff__man-center {
+.our-faithful-staff_man-center {
   background: var(--man-center) no-repeat;
   min-width: 28.5rem;
   min-height: 21.375rem;
 }
 
-.our-faithful-staff__man-right {
+.our-faithful-staff_man-right {
   background: var(--man-right) no-repeat;
   min-width: 28.5rem;
   min-height: 21.375rem;
 }
 
-h3 {
-  background: var(--phone-logo) no-repeat;
+.our-faithful-staff__main-phone::before {
+  content: var(--phone-logo);
+  position: relative;
+  top: .1875rem;
+  right: .3125rem;
+}
+
+/* Section "Review" */
+
+.review {
+  margin-top: 8.4375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.review__header-top {
+  font-size: 53px;
+}
+
+.review__header-bot-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  width: 55rem;
+}
+
+.review__header-bot {
+  font-size: 53px;
+}
+
+.review__header-text {
+  width: 28.125rem;
+  line-height: 1.3rem;
 }
