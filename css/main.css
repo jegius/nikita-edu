@@ -10,8 +10,12 @@
   --rent-a-car-border-bg: rgba(0, 0, 0, 0.05);
   --review-block-color: #f8f8f8;
   --review-block-text: #636262;
+  --footer-color: #150A05;
+  --footer-text: #fbfbfb;
+  --footer-email-input: #351708;
 
-  --logo: url(/image/header/logo.png);
+  --logo-header: url(/image/header/logo-header.png);
+  --logo-footer: url(/image/footer/logo-footer.png);
   --nav-notification: url(/image/header/notification.png);
   --bia-top-right: url(/image/best-in-auto/top-right.png);
   --bia-bot-left: url(/image/best-in-auto/bot-left.png);
@@ -81,7 +85,8 @@ a {
   text-decoration-line: none;
 }
 
-h1 {
+h1,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -118,6 +123,14 @@ h1 {
   align-self: flex-end;
 }
 
+.text_barlow {
+  font-family: "Barlow", sans-serif;
+}
+
+.text_bold {
+  font-weight: 700;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -134,7 +147,7 @@ h1 {
 .navigation__logo {
   width: 10.1875rem;
   height: 2.375rem;
-  background: var(--logo) no-repeat 100%;
+  background: var(--logo-header) no-repeat 100%;
 }
 
 .navigation__list {
@@ -598,9 +611,10 @@ h1 {
 }
 
 .review {
-  margin-top: 8.4375rem;
+  margin: 8.4375rem 0 11.3125rem 0;
   display: flex;
   flex-direction: column;
+
 }
 
 .review__header {
@@ -702,4 +716,99 @@ h1 {
 .review__author-name {
   font-weight: 500;
   color: var(--black);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.25rem 14.375rem;
+  background-color: var(--footer-color);
+  color: var(--white);
+}
+
+.footer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 71.25rem;
+  padding-bottom: 6.5625rem;
+  border-bottom: .125rem solid var(--white);
+}
+
+.footer__header-text {
+  font-size: 53px;
+}
+
+.footer__header-button {
+  padding: 1.125rem 3.3125rem;
+  background-color: var(--orange);
+  border-radius: 1.75rem;
+  font-size: 18px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  min-width: 71.25rem;
+  padding-top: 5.25rem;
+}
+
+.footer__logo-block {
+  max-width: 15.9375rem;
+}
+
+.footer__text {
+  color: var(--footer-text);
+  line-height: 1.5rem;
+}
+
+.footer__logo {
+  width: 10.1875rem;
+  height: 2.375rem;
+  background: var(--logo-footer) no-repeat;
+}
+
+.footer__info-navigation {
+  display: flex;
+  gap: 5.9375rem;
+}
+
+.footer__navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer__navigation-header {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer__info-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer__info-email {
+  width: 11.75rem;
+  height: 1.125rem;
+  border-radius: 1.5rem;
+  background-color: var(--footer-email-input);
+  padding: 0.8125rem 1.125rem;
+  font-size: 14px;
+}
+
+.footer__info-email::placeholder {
+  color: var(--white);
+  opacity: .5;
+}
+
+.footer__info-button {
+  width: 14.05rem;
+  height: 3.025rem;
+  border-radius: 1.7rem;
+  background-color: var(--orange);
+  font-size: 14px;
 }
