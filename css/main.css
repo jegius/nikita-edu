@@ -14,7 +14,7 @@
   --footer-text: #fbfbfb;
   --footer-email-input: #351708;
   --orange-white-bg: linear-gradient(var(--orange) 77%, var(--white) 23%);
-  --white-orange-bg: linear-gradient(var(--white) 71%, var(--orange) 29%);
+  --white-orange-bg: linear-gradient(var(--white) 77%, var(--orange) 23%);
 
   --logo-header: url(/image/header/logo-header.png);
   --logo-footer: url(/image/footer/logo-footer.png);
@@ -157,8 +157,8 @@ h4 {
 }
 
 .navigation__logo {
-  width: 10.1875rem;
-  height: 2.375rem;
+  min-width: 10.1875rem;
+  min-height: 2.375rem;
   background: var(--logo-header) no-repeat 100%;
 }
 
@@ -243,7 +243,6 @@ h4 {
   font-family: "Abril Fatface", sans-serif;
   font-weight: 400;
   font-size: 70px;
-  margin-bottom: -7rem;
   background: var(--white-orange-bg);
 }
 
@@ -273,8 +272,8 @@ h4 {
 }
 
 .best-in-auto__top-right-pict {
-  width: 35.9375rem;
-  height: 25.3125rem;
+  min-width: 35.9375rem;
+  min-height: 25.3125rem;
   background: var(--bia-top-right) no-repeat;
 }
 
@@ -300,26 +299,27 @@ h4 {
 }
 
 .best-in-auto__bot-left-pict {
-  width: 40rem;
-  height: 25.3125rem;
+  min-width: 40rem;
+  min-height: 25.3125rem;
   background: var(--bia-bot-left) no-repeat;
   margin: 0 0 4rem 5rem;
 }
 
 .best-in-auto__why-choose-us {
   position: relative;
-  left: 33rem;
-  bottom: 7rem;
+  top: 5rem;
+  left: 20rem;
+  font-size: 95px;
 }
 
 .why-choose-us {
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--orange);
   color: var(--white);
+  padding-bottom: 3.5625rem;
 }
 
 .why-choose-us__text {
@@ -339,7 +339,6 @@ h4 {
 .why-choose-us__auto-header {
   display: flex;
   align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: .5rem;
 }
@@ -357,19 +356,19 @@ h4 {
 
 .why-choose-us__auto-pict-left {
   background: var(--car-left) no-repeat;
-  height: 21.25rem;
+  min-height: 21.25rem;
   cursor: pointer;
 }
 
 .why-choose-us__auto-pict-center {
   background: var(--car-center) no-repeat;
-  height: 21.25rem;
+  min-height: 21.25rem;
   cursor: pointer;
 }
 
 .why-choose-us__auto-pict-right {
   background: var(--car-right) no-repeat;
-  height: 21.25rem;
+  min-height: 21.25rem;
   cursor: pointer;
 }
 
@@ -395,19 +394,19 @@ h4 {
 }
 
 .rent-a-car__text {
-  width: 33.375rem;
+  max-width: 33.375rem;
   margin-bottom: 3.5rem;
 }
 
 .rent-a-car__form {
   display: flex;
   flex-wrap: wrap;
-  width: 50rem;
+  max-width: 50rem;
   gap: 3rem;
 }
 
 .rent-a-car__input {
-  width: 20rem;
+  min-width: 20rem;
   padding: 1.5rem;
   background-color: var(--rent-a-car-input-bg);
   border: .0625rem solid var(--rent-a-car-border-bg);
@@ -441,18 +440,19 @@ h4 {
 
 .rent-a-car__car-bg {
   background: var(--rent-a-car) no-repeat;
-  width: 44.4375rem;
-  height: 35.1875rem;
+  min-width: 44.4375rem;
+  min-height: 35.1875rem;
 }
 
 .comfortable-car-white {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 7.5rem;
 }
 
 .comfortable-car-white__text {
-  width: 35.125rem;
+  max-width: 35.125rem;
   text-align: center;
   line-height: 1.5rem;
 }
@@ -602,9 +602,33 @@ h4 {
 
 .our-faithful-staff__mans-contact {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  gap: .5rem;
+  gap: 2rem;
+}
+
+.our-faithful-staff__mans-info-contact {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20.0625rem;
+  line-height: 3rem;
+}
+
+.our-faithful-staff__mans-header {
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.our-faithful-staff__mans-stick {
+  position: relative;
+  top: .7rem;
+  left: .5rem;
+  width: 4.75rem;
+  height: .0625rem;
+  background-color: var(--black);
+  margin-top: 1rem;
 }
 
 .our-faithful-staff__main-proff {
@@ -617,6 +641,13 @@ h4 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
+}
+
+.our-faithful-staff__main-phone::before {
+  content: var(--phone-logo);
+  position: relative;
+  top: .1875rem;
+  right: .1125rem;
 }
 
 .our-faithful-staff_man-left {
@@ -635,13 +666,6 @@ h4 {
   background: var(--man-right) no-repeat;
   min-width: 28.5rem;
   min-height: 21.375rem;
-}
-
-.our-faithful-staff__main-phone::before {
-  content: var(--phone-logo);
-  position: relative;
-  top: .1875rem;
-  right: .3125rem;
 }
 
 .review {
@@ -673,7 +697,7 @@ h4 {
 }
 
 .review__header-text {
-  width: 28.125rem;
+  max-width: 28.125rem;
   line-height: 1.3rem;
 }
 
@@ -689,8 +713,8 @@ h4 {
 .review__block {
   display: flex;
   flex-direction: column;
-  width: 25.9375rem;
-  height: 16.625rem;
+  max-width: 25.9375rem;
+  max-height: 16.625rem;
   border-radius: 1.875rem;
   background-color: var(--review-block-color);
   color: var(--review-block-text);
@@ -711,7 +735,7 @@ h4 {
 }
 
 .review__block-text {
-  height: 8.75rem;
+  min-height: 8.75rem;
 }
 
 .review__star-list {
@@ -785,6 +809,7 @@ h4 {
   font-size: 18px;
   box-shadow: 0 0 0 0 var(--white);
   transition: box-shadow .1s ease-in;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -806,8 +831,8 @@ h4 {
 }
 
 .footer__logo {
-  width: 10.1875rem;
-  height: 2.375rem;
+  min-width: 10.1875rem;
+  min-height: 2.375rem;
   background: var(--logo-footer) no-repeat;
 }
 
@@ -815,6 +840,12 @@ h4 {
   display: flex;
   gap: 5.9375rem;
   flex-wrap: wrap;
+}
+
+.footer__navigation-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .footer__navigation-list {
@@ -839,8 +870,8 @@ h4 {
 }
 
 .footer__info-email {
-  width: 11.75rem;
-  height: 1.125rem;
+  min-width: 11.75rem;
+  min-height: 1.125rem;
   border-radius: 1.5rem;
   background-color: var(--footer-email-input);
   padding: 0.8125rem 1.125rem;
@@ -853,11 +884,12 @@ h4 {
 }
 
 .footer__info-button {
-  width: 14.05rem;
-  height: 3.025rem;
+  min-width: 14.05rem;
+  min-height: 3.025rem;
   border-radius: 1.7rem;
   background-color: var(--orange);
   font-size: 14px;
   box-shadow: 0 0 0 0 var(--white);
   transition: box-shadow .1s ease-in;
+  cursor: pointer;
 }
