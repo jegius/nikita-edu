@@ -6,6 +6,7 @@
   --orange: #fc621c;
   --transwhite: rgba(255, 255, 255, 0.14);
   --notification-color: #dd4141;
+  --notification-border: #a72424;
   --rent-a-car-input-bg: #f9f9f9;
   --rent-a-car-border-bg: rgba(0, 0, 0, 0.05);
   --review-block-color: #f8f8f8;
@@ -191,12 +192,13 @@ h4 {
 
 .navigation__notification:hover .navigation__notification-indicator {
   position: absolute;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: solid 0.125rem var(--notification-border);
 }
 
 .navigation__notification:hover .navigation__notification-count {
-  font-size: 24px;
+  font-size: 15px;
 }
 
 .navigation__notification-indicator {
@@ -227,13 +229,13 @@ h4 {
   border-radius: .3125rem;
   box-shadow: 0 0 0 0 var(--black);
   text-shadow: 0 0 0 var(--orange);
-  transition: box-shadow .1s ease, text-shadow .1s ease;
+  transition: box-shadow .2s ease, text-shadow .2s ease-out;
   cursor: pointer;
 }
 
 .navigation__login:hover {
-  box-shadow: 0 0 0.1rem 0.1rem var(--black);
-  text-shadow: .0625rem 0 1.5rem var(--orange);
+  box-shadow: 0 0 .08rem .08rem var(--black);
+  text-shadow: .05rem 0 .1rem var(--orange);
 }
 
 .best-in-auto {
@@ -440,8 +442,10 @@ h4 {
 
 .rent-a-car__car-bg {
   background: var(--rent-a-car) no-repeat;
-  min-width: 44.4375rem;
-  min-height: 35.1875rem;
+  min-width: 40.4375rem;
+  min-height: 38.1875rem;
+  border-radius: 2.1875rem;
+  background-size: cover;
 }
 
 .comfortable-car-white {
