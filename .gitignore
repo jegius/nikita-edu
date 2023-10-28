@@ -47,3 +47,6 @@ typings/
 .npm
 /.cache/
 /.idea/
+
+# Шаблон компонента
+.example/

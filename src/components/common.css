@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow:wght@400;700&family=Inter:wght@400;500;700&family=Manrope:wght@700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&display=swap");
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --orange: #fc621c;
+    --transwhite: rgba(255, 255, 255, 0.14);
+    --notification-color: #dd4141;
+    --notification-border: #a72424;
+    --rent-a-car-input-bg: #f9f9f9;
+    --rent-a-car-border-bg: rgba(0, 0, 0, 0.05);
+    --review-block-color: #f8f8f8;
+    --review-block-text: #636262;
+    --footer-color: #150A05;
+    --footer-text: #fbfbfb;
+    --footer-email-input: #351708;
+    --orange-white-bg: linear-gradient(var(--orange) 77%, var(--white) 23%);
+    --white-orange-bg: linear-gradient(var(--white) 77%, var(--orange) 23%);
+
+    --logo-header: url(/image/header/logo-header.png);
+    --logo-footer: url(/image/footer/logo-footer.png);
+    --nav-notification: url(/image/header/notification.png);
+    --bia-top-right: url(/image/best-in-auto/top-right.png);
+    --bia-bot-left: url(/image/best-in-auto/bot-left.png);
+    --car-left: url(/image/why-choose-us/car-left.png);
+    --car-center: url(/image/why-choose-us/car-center.png);
+    --car-right: url(/image/why-choose-us/car-right.png);
+    --rent-a-car: url(/image/rent-a-car/rent-a-car.png);
+    --select-arrow: url(/image/rent-a-car/select-arrow.svg);
+    --comfortable-car-white-left: url(/image/comfortable-car-white/comfortable-car-white-left.png);
+    --comfortable-car-white-top-right-1: url(/image/comfortable-car-white/comfortable-car-white-top-right-1.png);
+    --comfortable-car-white-top-right-2: url(/image/comfortable-car-white/comfortable-car-white-top-right-2.png);
+    --comfortable-car-white-bot-right: url(/image/comfortable-car-white/comfortable-car-white-bot-right.png);
+    --comfortable-car-orange-big: url(/image/comfortable-car-orange/comfortable-car-orange-big.png);
+    --comfortable-car-orange-little-left: url(/image/comfortable-car-orange/comfortable-car-orange-little-left.png);
+    --comfortable-car-orange-little-right: url(/image/comfortable-car-orange/comfortable-car-orange-little-right.png);
+    --man-left: url(/image/our-faithful-staff/man-left.png);
+    --man-center: url(/image/our-faithful-staff/man-center.png);
+    --man-right: url(/image/our-faithful-staff/man-right.png);
+    --phone-logo: url(/image/our-faithful-staff/phone-logo.png);
+    --review-star: url(/image/review/review-star.png);
+    --author-left: url(/image/review/author-left.png);
+    --author-center: url(/image/review/author-center.png);
+    --author-right: url(/image/review/author-right.png);
+}
