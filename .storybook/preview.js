@@ -16,6 +16,12 @@ import { BiaFirstRowComponent } from '../src/components/bia-first-row/bia-first-
 import { BiaTextBlockComponent } from '../src/components/bia-text-block/bia-text-block-component.js';
 import { BiaSecondRowComponent } from '../src/components/bia-second-row/bia-second-row-component.js';
 import { BestInAutoComponent } from '../src/components/best-in-auto/best-in-auto-component.js';
+import { SpanHeaderComponent } from '../src/components/span-header/span-header-component.js'
+import { StickComponent } from '../src/components/stick/stick-component.js';
+import { WcuAutoHeaderComponent } from '../src/components/wcu-auto-header/wcu-auto-header-component.js'
+import { WcuAutoBlockComponent } from '../src/components/wcu-auto-block/wcu-auto-block-component.js'
+import { WcuAutoComponent } from '../src/components/wcu-auto/wcu-auto-component.js';
+import { WhyChooseUsComponent } from '../src/components/why-choose-us/why-choose-us-component.js';
 
 const preview = {
   parameters: {
@@ -47,6 +53,12 @@ const preview = {
   BiaTextBlockComponent,
   BiaSecondRowComponent,
   BestInAutoComponent,
+  SpanHeaderComponent,
+  StickComponent,
+  WcuAutoHeaderComponent,
+  WcuAutoBlockComponent,
+  WcuAutoComponent,
+  WhyChooseUsComponent,
 ].map((component) => customElements.define(component.name, component));
 
 export default preview;

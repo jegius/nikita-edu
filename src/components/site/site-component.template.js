@@ -5,5 +5,6 @@ export default `
     <main class="main">
         <header-component></header-component>
         <best-in-auto-component></best-in-auto-component>
+        <why-choose-us-component></why-choose-us-component>
     </main>
 `;
