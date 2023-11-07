@@ -22,6 +22,11 @@ import { WcuAutoHeaderComponent } from '../src/components/wcu-auto-header/wcu-au
 import { WcuAutoBlockComponent } from '../src/components/wcu-auto-block/wcu-auto-block-component.js'
 import { WcuAutoComponent } from '../src/components/wcu-auto/wcu-auto-component.js';
 import { WhyChooseUsComponent } from '../src/components/why-choose-us/why-choose-us-component.js';
+import { InputTextComponent } from '../src/components/input-text/input-text-component.js';
+import { CarSelectComponent } from '../src/components/car-select/car-select-component.js';
+import { CarFormComponent } from '../src/components/car-form/car-form-component.js';
+import { RacInfoComponent } from '../src/components/rac-info/rac-info-component.js';
+import { RentACarComponent } from '../src/components/rent-a-car/rent-a-car-component.js';
 
 const preview = {
   parameters: {
@@ -59,6 +64,11 @@ const preview = {
   WcuAutoBlockComponent,
   WcuAutoComponent,
   WhyChooseUsComponent,
+  InputTextComponent,
+  CarSelectComponent,
+  CarFormComponent,
+  RacInfoComponent,
+  RentACarComponent,
 ].map((component) => customElements.define(component.name, component));
 
 export default preview;
