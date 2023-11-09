@@ -27,6 +27,15 @@ import { CarSelectComponent } from '../src/components/car-select/car-select-comp
 import { CarFormComponent } from '../src/components/car-form/car-form-component.js';
 import { RacInfoComponent } from '../src/components/rac-info/rac-info-component.js';
 import { RentACarComponent } from '../src/components/rent-a-car/rent-a-car-component.js';
+import { CcwCarsTextComponent } from '../src/components/ccw-cars-text/ccw-cars-text-component.js';
+import { CcwCarTopRightComponent } from '../src/components/ccw-car-top-right/ccw-car-top-right-component.js';
+import { CcwCarsRightComponent } from '../src/components/ccw-cars-right/ccw-cars-right-component.js';
+import { CcwCarsInfoComponent } from '../src/components/ccw-cars-info/ccw-cars-info-component.js';
+import { ComfortableCarWhiteComponent } from '../src/components/comfortable-car-white/comfortable-car-white-component.js';
+import { CcoBigComponent } from '../src/components/cco-big/cco-big-component.js';
+import { CcoInfoBackAndTextComponent } from '../src/components/cco-info-back-and-text/cco-info-back-and-text-component.js';
+import { CcoCarsInfoComponent } from '../src/components/cco-cars-info/cco-cars-info-component.js';
+import { ComfortableCarOrangeComponent } from '../src/components/comfortable-car-orange/comfortable-car-orange-component.js';
 
 const preview = {
   parameters: {
@@ -69,6 +78,15 @@ const preview = {
   CarFormComponent,
   RacInfoComponent,
   RentACarComponent,
+  CcwCarsTextComponent,
+  CcwCarTopRightComponent,
+  CcwCarsRightComponent,
+  CcwCarsInfoComponent,
+  ComfortableCarWhiteComponent,
+  CcoBigComponent,
+  CcoInfoBackAndTextComponent,
+  CcoCarsInfoComponent,
+  ComfortableCarOrangeComponent,
 ].map((component) => customElements.define(component.name, component));
 
 export default preview;
