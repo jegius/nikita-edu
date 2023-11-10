@@ -1,8 +1,8 @@
-import template from "./-component.template.js";
+import template from "./ofs-info-contact-component.template.js";
 
-export class Component extends HTMLElement {
+export class OfsInfoContactComponent extends HTMLElement {
     static get name() {
-        return "-component";
+        return "ofs-info-contact-component";
     }
 
     constructor() {

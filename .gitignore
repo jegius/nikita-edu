@@ -49,4 +49,4 @@ typings/
 /.idea/
 
 # Шаблон компонента
-.example/
+example

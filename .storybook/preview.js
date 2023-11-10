@@ -36,6 +36,12 @@ import { CcoBigComponent } from '../src/components/cco-big/cco-big-component.js'
 import { CcoInfoBackAndTextComponent } from '../src/components/cco-info-back-and-text/cco-info-back-and-text-component.js';
 import { CcoCarsInfoComponent } from '../src/components/cco-cars-info/cco-cars-info-component.js';
 import { ComfortableCarOrangeComponent } from '../src/components/comfortable-car-orange/comfortable-car-orange-component.js';
+import { OfsSpanWithPhoneComponent } from '../src/components/ofs-span-with-phone/ofs-span-with-phone-component.js';
+import { OfsInfoContactComponent } from '../src/components/ofs-info-contact/ofs-info-contact-component.js';
+import { OfsContactComponent } from '../src/components/ofs-contact/ofs-contact-component.js';
+import { OfsMansBlocksComponent } from '../src/components/ofs-mans-blocks/ofs-mans-blocks-component.js';
+import { OfsMansInfoComponent } from '../src/components/ofs-mans-info/ofs-mans-info-component.js';
+import { OurFaithfulStaffComponent } from '../src/components/our-faithful-staff/our-faithful-staff-component.js';
 
 const preview = {
   parameters: {
@@ -87,6 +93,12 @@ const preview = {
   CcoInfoBackAndTextComponent,
   CcoCarsInfoComponent,
   ComfortableCarOrangeComponent,
+  OfsSpanWithPhoneComponent,
+  OfsInfoContactComponent,
+  OfsContactComponent,
+  OfsMansBlocksComponent,
+  OfsMansInfoComponent,
+  OurFaithfulStaffComponent,
 ].map((component) => customElements.define(component.name, component));
 
 export default preview;

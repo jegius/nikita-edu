@@ -7,8 +7,8 @@ export default `
         <best-in-auto-component></best-in-auto-component>
         <why-choose-us-component></why-choose-us-component>
         <rent-a-car-component></rent-a-car-component>
-        <why-choose-us-component></why-choose-us-component>
         <comfortable-car-white-component></comfortable-car-white-component>
         <comfortable-car-orange-component></comfortable-car-orange-component>
+        <our-faithful-staff-component></our-faithful-staff-component>
     </main>
 `;
