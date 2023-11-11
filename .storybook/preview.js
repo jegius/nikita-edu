@@ -42,6 +42,16 @@ import { OfsContactComponent } from '../src/components/ofs-contact/ofs-contact-c
 import { OfsMansBlocksComponent } from '../src/components/ofs-mans-blocks/ofs-mans-blocks-component.js';
 import { OfsMansInfoComponent } from '../src/components/ofs-mans-info/ofs-mans-info-component.js';
 import { OurFaithfulStaffComponent } from '../src/components/our-faithful-staff/our-faithful-staff-component.js';
+import { ReviewStarComponent } from '../src/components/review-star/review-star-component.js';
+import { ReviewStarListComponent } from '../src/components/review-star-list/review-star-list-component.js';
+import { ReviewAuthorImgComponent } from '../src/components/review-author-img/review-author-img-component.js';
+import { ReviewAuthorNameComponent } from '../src/components/review-author-name/review-author-name-component.js';
+import { ReviewAuthorComponent } from '../src/components/review-author/review-author-component.js';
+import { ReviewBlockComponent } from '../src/components/review-block/review-block-component.js';
+import { ReviewBlockListComponent } from '../src/components/review-block-list/review-block-list-component.js';
+import { ReviewHeaderBotTextComponent } from '../src/components/review-header-bot-text/review-header-bot-text-component.js';
+import { ReviewHeaderComponent } from '../src/components/review-header/review-header-component.js';
+import { ReviewComponent } from '../src/components/review/review-component.js';
 
 const preview = {
   parameters: {
@@ -99,6 +109,16 @@ const preview = {
   OfsMansBlocksComponent,
   OfsMansInfoComponent,
   OurFaithfulStaffComponent,
+  ReviewStarComponent,
+  ReviewStarListComponent,
+  ReviewAuthorImgComponent,
+  ReviewAuthorNameComponent,
+  ReviewAuthorComponent,
+  ReviewBlockComponent,
+  ReviewBlockListComponent,
+  ReviewHeaderBotTextComponent,
+  ReviewHeaderComponent,
+  ReviewComponent,
 ].map((component) => customElements.define(component.name, component));
 
 export default preview;

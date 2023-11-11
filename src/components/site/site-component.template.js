@@ -10,5 +10,6 @@ export default `
         <comfortable-car-white-component></comfortable-car-white-component>
         <comfortable-car-orange-component></comfortable-car-orange-component>
         <our-faithful-staff-component></our-faithful-staff-component>
+        <review-component></review-component>
     </main>
 `;
