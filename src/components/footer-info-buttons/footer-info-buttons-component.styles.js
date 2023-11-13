@@ -2,12 +2,11 @@ export default `
     <style>
     @import url('../common.css');
 
-    .main {
+    .footer__info-buttons {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 100vw;
+        gap: 1.2rem;
     }
-
+    
     </style>
 `

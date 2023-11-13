@@ -2,11 +2,10 @@ export default `
     <style>
     @import url('../common.css');
 
-    .main {
+    .footer__navigation-block {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 100vw;
+        gap: 1.25rem;
     }
 
     </style>

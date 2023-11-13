@@ -52,10 +52,36 @@ import { ReviewBlockListComponent } from '../src/components/review-block-list/re
 import { ReviewHeaderBotTextComponent } from '../src/components/review-header-bot-text/review-header-bot-text-component.js';
 import { ReviewHeaderComponent } from '../src/components/review-header/review-header-component.js';
 import { ReviewComponent } from '../src/components/review/review-component.js';
+import { FooterHeaderComponent } from '../src/components/footer-header/footer-header-component.js';
+import { FooterLogoBlockComponent } from '../src/components/footer-logo-block/footer-logo-block-component.js';
+import { FooterItemComponent } from '../src/components/footer-item/footer-item-component.js';
+import { FooterNavigationListComponent } from '../src/components/footer-navigation-list/footer-navigation-list-component.js';
+import { FooterNavigationBlockComponent } from '../src/components/footer-navigation-block/footer-navigation-block-component.js';
+import { FooterInfoButtonsComponent } from '../src/components/footer-info-buttons/footer-info-buttons-component.js';
+import { FooterInfoNavigationComponent } from '../src/components/footer-info-navigation/footer-info-navigation-component.js';
+import { FooterInfoComponent } from '../src/components/footer-info/footer-info-component.js';
+import { FooterComponent } from '../src/components/footer/footer-component.js';
 
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
+    backgrounds: {
+      default: "site",
+      values: [
+        {
+          name: "site",
+          value: "#fff"
+        },
+        {
+          name: "brown",
+          value: "#150A05"
+        },
+        {
+          name: "orange",
+          value: "#fc621c"
+        }
+      ]
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -119,6 +145,15 @@ const preview = {
   ReviewHeaderBotTextComponent,
   ReviewHeaderComponent,
   ReviewComponent,
+  FooterHeaderComponent,
+  FooterLogoBlockComponent,
+  FooterItemComponent,
+  FooterNavigationListComponent,
+  FooterNavigationBlockComponent,
+  FooterInfoButtonsComponent,
+  FooterInfoNavigationComponent,
+  FooterInfoComponent,
+  FooterComponent,
 ].map((component) => customElements.define(component.name, component));
 
 export default preview;
